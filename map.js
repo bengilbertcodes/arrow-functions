@@ -54,5 +54,5 @@ const studentsWithIds = students.map(student => [student.name, student.id]);
 const studentsAge = students.map(student => ({ ...student, Age: '25'}));
 console.log(studentsAge);
 
-const studentsObj = students.map(student => ([student.id, student.name]));
+const studentsObj = students.map(student => ({id: student.id, name: student.name}));
 console.log(studentsObj);
